@@ -10,9 +10,9 @@ describe("数字(整数)を渡すとローマ数字(文字列)に変換する", 
   // test("3はIII", () => {
   //   expect(romanNumber(3)).toBe("III");
   // });
-  // test("4はIV", () => {
-  //   expect(romanNumber(4)).toBe("IV");
-  // });
+  test("4はIV", () => {
+    expect(romanNumber(4)).toBe("IV");
+  });
   test("5はV", () => {
     expect(romanNumber(5)).toBe("V");
   });
@@ -28,7 +28,17 @@ describe("数字(整数)を渡すとローマ数字(文字列)に変換する", 
   // test("9はIX", () => {
   //   expect(romanNumber(9)).toBe("IX");
   // });
-  // test("10はX", () => {
-  //   expect(romanNumber(10)).toBe("X");
-  // });
+  test("10はX", () => {
+    expect(romanNumber(10)).toBe("X");
+  });
+  test("11はXI", () => {
+    expect(romanNumber(11)).toBe("XI");
+  });
+  test("15はXV", () => {
+    expect(romanNumber(15)).toBe("XV");
+  });
+  test("16はXVI", () => {
+    expect(romanNumber(16)).toBe("XVI");
+  });
+
 })
